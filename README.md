@@ -9,9 +9,22 @@ This project was developed by [Laura Hernández](https://github.com/LauraHEVA), 
 
 ## Teck Stack
 
-`Frontend` : React | Typescript | Redux | Styled-components | Jest | Cypress
-`Backend` : NodeJS | ExpressJS | MongoDB | Mongoose | JWT | Jest | Joi
+`Frontend` : React | Typescript | Redux | PWA | Styled-components | Jest | Cypress \
+`Backend` : NodeJS | ExpressJS | MongoDB | Mongoose | JWT | Jest \
 `Other` : Figma | Postman | Husky | SonarQube | Trello (Agile methodology board)
+
+## Preview
+
+[Link to deployment](https://skybuzz-laura-hernandez.netlify.app/)
+
+## PWA
+
+This is a PWA (Progressive Web App).
+You can download the App following this steps:
+
+1. Open the [web app](https://skybuzz-laura-hernandez.netlify.app/) in your browser.
+2. Click on an install button in the address bar.
+3. The App will be installed into your device.
 
 ## Available Scripts
 
