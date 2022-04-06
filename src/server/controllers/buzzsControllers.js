@@ -73,7 +73,7 @@ const detailBuzz = async (req, res, next) => {
       .populate("author", "name username")
       .populate({
         path: "comments",
-        select: "author id topic likes date text",
+        select: "author id topic likes date text comments",
         populate: { path: "author", select: "name username" },
       });
     if (buzz) {
