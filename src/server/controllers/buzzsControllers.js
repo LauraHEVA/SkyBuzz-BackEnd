@@ -30,6 +30,14 @@ const deleteBuzz = async (req, res, next) => {
       await Buzz.findByIdAndRemove(id);
       res.json({});
       debug(chalk.greenBright(`Buzz deleted correctly`));
+      if (buzz.isComment) {
+        const parentBuzz = await Buzz.findOne({ comments: id });
+        const newArrayComments = parentBuzz.comments.filter(
+          (comment) => comment.toString() !== id
+        );
+        parentBuzz.comments = [...newArrayComments];
+        await parentBuzz.save();
+      }
     } else {
       const error = new Error("Buzz not found");
       error.code = 404;
